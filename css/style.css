@@ -1,0 +1,486 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap'); 
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+html{
+   font-size: 62.5%;
+ }
+ body{
+    font-family: 'Montserrat', sans-serif;;
+    line-height: 1.7;
+ }
+ ul li{
+   list-style: none;
+ }
+ a{
+   font-size: 1.6rem;
+   text-decoration: none;
+ }
+ p,li{
+   font-size: 1.6rem;
+   margin: 0.5em 0rem;
+   letter-spacing: 0.15em;
+ }
+ h1,h2,h2{
+   margin: 0.5em 0em;
+   letter-spacing: 0.15em;
+   font-weight: 500;
+
+ }
+   /* ############ utility classes ############# */
+
+   .container{
+      max-width: 1200px;
+      width: 90%;
+      margin: 0 auto;
+   }
+ .lg-head{
+   font-size: 3.5rem;
+ }
+
+ .md-heading{
+   font-size: 2.2rem;
+ }
+
+ .text-red{
+   color: #e63946;
+ }
+ .text-light{
+   color: #f4f4f4;
+ }
+ .text-black{
+   color: #333;
+ }
+.text-gray{
+   color: #555;
+}
+.bg-dark{
+  background-color: #263238;
+}
+.btm{
+   display: inline-block;
+   padding: 0.5em 1.5em;
+   font-weight: 500;
+   text-transform: uppercase;
+   margin: 0.5em 0;
+}
+.btm-primary{
+   background-color: #fff;
+   border-radius: 10em;
+}
+.btm-secondary{
+  border:2px solid #e63946;
+  border-radius: 10em;
+  color: #e63946;
+  background-color: #fff;
+}
+.btm-primary:hover{
+  background-color: #ddd;
+
+}
+.btm-secondary:hover{
+  background-color: #fcf3f2;
+}
+
+
+ .head{
+    position: relative;
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../img/img8.jpeg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ .nav-bar{
+    /* border: 2px solid white; */
+    padding: 1rem;
+ }
+ .nav-bar a:link,
+ .nav-bar a:visited{
+   color: #f4f4f4;
+ }
+ .nav-bar a{
+   padding-bottom: 0.3rem;
+ }
+
+ .nav-bar a:hover{
+   border-bottom: 1px solid #fff;
+ }
+ 
+ /* ############# header content style ############## */
+
+ .head-content {
+   margin-top: 100px;
+   position: absolute;
+   text-align: center;
+   /* border: 2px solid white; */
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background: linear-gradient(rgba(0 0 0 0.5)rgba(0 0 0 0.5));
+ }
+ .head-content h1{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.head-content p{
+  text-transform: uppercase;
+}
+
+/* ################## #navigation style ################## */
+ .nav-bar .logo{
+    float: left;
+ }
+  .nav-bar .nav-items {
+   float: right;
+   margin-top: 1rem;
+ }
+  .nav-bar .nav-item{
+   display: inline-block;
+   padding: 1rem;
+   text-transform: uppercase;
+ }
+
+ 
+ .nav-bar::after{
+   content: '';
+   display: block;
+   clear: both;
+ }
+
+ /* #################showcase section style################ */
+ .showcase{
+   background: #ddd;
+   padding:10em 0;
+ }
+
+ .row{
+  box-shadow: 0px 0px 20px 0px #aaa;
+ }
+ .row{
+   height: 350px;
+   /* border: 2px solid red; */
+   background-color: #fefefe;
+ }
+ .row1{
+
+   margin-bottom: 10em;
+ }
+ .row1 .img-box, .row2 .text-box{
+   float: left;
+   width: 50%;
+ }
+ .row2 .img-box, .row1 .text-box{
+   float: right;
+   width: 50%;
+ }
+ .row .img-box{
+   height: 100%;
+   /* border: 5px solid green; */
+ }
+ .row .text-box{
+   padding: 3rem;
+   /* border: 5px solid blueviolet; */
+ }
+ .row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .row::after{
+  content: '';
+  display: block;
+  clear: both;
+ }
+ /* ###########feature section style############ */
+
+ .features{
+  /* border: 1px solid red; */
+  padding: 10rem 0;
+ }
+ .box-rapper{
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.271);
+ }
+ .box{
+  width: 33.333333%;
+  float: left;
+  /* border: 2px solid black; */
+  padding: 2rem;
+  text-align: center;
+ }
+ .box-1, .box-3{
+  background-color: #263238;
+  color: #fff;
+ }
+ .box-2{
+  background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  color: #fff;
+ }
+ .box-rapper::after{
+  content: '';
+  clear: both;
+  display: block;
+ }
+ /* ###################footer styling################ */
+ .foot{
+  background: #263238;
+  color: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+ }
+ .social-media i{
+  margin: 2rem;
+ }
+ 
+ /* ############### about page styling ############## */
+
+ .about-rap{
+  text-align: center;
+  margin-top: 2rem;
+ }
+
+ .about{
+  padding: 5rem 0rem;
+ }
+ /* .about-head{
+  border-bottom: 5px solid #e63946;
+ } */
+ .about-head::after{
+  content:'';
+  display: block;
+  border: 4px solid #e63946;
+  width: 100%;
+ }
+ .about-rap .left{
+   float: left;
+   width: 50%;
+ }
+ .about-rap .right{
+   float: right;
+   width: 50%;
+ }
+ .about-rap::after{
+  content:'';
+  display: block;
+  clear: both;
+ }
+ .about-rap  li::before{
+  content: '\2713';
+  color: red;
+  font-weight: bold;
+  padding-right: 1rem;
+ }
+
+
+ /* ############ count styling ################ */
+
+ .count{
+  margin-top: 3rem;
+ }
+ .count-item{
+  float: left;
+  width: 25%;
+  text-align: center;
+ }
+
+ .count::after{
+  content:'';
+  display: block;
+  clear: both;
+ }
+ .count span{
+  font-size: 3rem;
+  font-weight: 700;
+  color: #e63946;
+ }
+ .count-item p{
+  font-weight: 700;
+  color: #555;
+  font-size: 1.8rem;
+ }
+
+ /* ############ banner styling ################ */
+ .cta-banner{
+  background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  color: #f4f4f4;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.242);
+  margin-top: 3rem;
+ }
+ .cta-banner-left{
+  float: left;
+  width: 60%;
+ }
+ .cta-banner-right{
+  float: right;
+  width: 40%;
+  text-align: right;
+ }
+ .cta-banner::after{
+  content:'';
+  display: block;
+  clear: both;
+ }
+ .cta-line{
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+.btn-cta{
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  border: 4px solid white;
+  padding: 0.3rem 2.5em;
+  color: #f4f4f4;
+  letter-spacing: 0.5rem;
+}
+.contact-form{
+  padding: 5rem 0;
+  background: #f7f7f7;
+}
+.form-rap::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.form-rap .company-address{
+  height: 760px;
+  background: #fff;
+  width: 50%;
+  float: left;
+  padding: 1rem;
+}
+.form-rap .address-group{
+  margin-bottom: 3rem;
+}
+.form-rap .company-address img{
+  max-width: 90%;
+  min-height: 40rem;
+  object-fit: cover;
+  object-position: right;
+}
+.company-address  i{
+  display: inline-block;
+  margin-right: 1rem;
+}
+.company-address  h2{
+  display: inline-block;
+  text-transform: uppercase;
+}
+/* ############### form styling ############### */
+.form-rap .form{
+  height: 760px;
+  font-size: 1.6rem;
+  background: #fff;
+  width: 50%;
+  float: right;
+  padding: 1rem;
+}
+.form h1::after{
+  content: '';
+  display: block;
+  border: 4px solid #e63946;
+  width: 100%;
+}
+.form label{
+  display: block;
+}
+.form-rap .form input{
+  padding: 0.5rem;
+  width: 100%;
+}
+.form-rap .form .form-group{
+  margin-bottom: 1.2rem;
+}
+.form-rap .form label::after{
+  content: '';
+  color: #e63946;
+}
+.form-rap .form textarea{
+  width: 100%;
+  height: 300px;
+  padding : 1rem;
+}
+.form-btn{
+  display: block;
+  margin: 1rem  auto;
+  padding: 0.5rem 3rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-rap  input:focus{
+  padding: 0.8rem;
+}
+.form-rap  input:hover{
+  background: rgb(241, 236, 236);
+}
+
+.container::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+
+@media (max-width: 600px){
+   html{
+    font-size: 50%;
+   }
+   .nav-bar .nav-items, .nav-bar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+   }
+   .row{
+    height: auto;
+    width: 100%;
+
+   }
+   .row .img-box, .row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+   }
+   .features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+   }
+   .features .box-2,
+   .features .box-3{
+    margin-top:5rem ;
+   }
+   .cta-banner-left, .cta-banner-right{
+    float: left;
+    width: 100%;
+    text-align: center;
+   }
+   .form-rap .company-address{
+    float: none;
+    width: 100%;
+    height:auto;
+    margin-bottom: 5rem;
+   }
+   .form-rap .form{
+    float: none;
+    width: 100%;
+    height: auto;
+   }
+}

@@ -1,0 +1,111 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background: red;
+    animation-name: change-bg-color;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    /* animation-iteration-count: 3; */
+    animation-fill-mode: forwards;
+} 
+
+@keyframes change-bg-color{
+
+    from{
+     background: blueviolet;
+    }
+    to{
+     background: orangered;
+    }
+}
+
+.box2{
+    width: 10px;
+    height: 10px;
+    background: orangered;
+    animation-name: width-chng;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes width-chng{
+    from{
+      width: 0px;
+    }
+    to{
+      width: 500px;
+    }
+}
+ /* ################ animation ############## */
+.box3{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: lightcoral;
+    animation-name: move-ment;
+    animation-duration: 5s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes move-ment{
+    0%{
+     top: 0;
+     left: 0;   
+     background: lightblue;
+    }
+    20%{
+     top: 300px;
+     left: 100px;
+     background: lightgreen;
+     width: 80px;
+    }
+    40%{
+     top: 0;
+     left: 200px;
+     background: lightslategray;
+     width: 50px;
+    }
+    60%{
+        top: 300px;
+        left: 300px;
+       background: lightseagreen;
+       width: 80px;
+
+    }
+       
+    80%{
+        top: 0;
+        left: 400px;
+        width: 50px;
+    }
+    90%{
+        top: 300px;
+        left: 500px;
+        width: 80px;
+    }
+    100%{
+        top: 0;
+        left: 600px;
+        width: 50px;
+    }
+}
+  /* ################## Transition ############ 
+   rotate,skew,traslate,scale*/
+.box4{
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+    margin: 150px auto;
+    transform-origin: top right;
+    /* transition: all 1s ease-in-out; */
+    transition: all 1s ease-in-out;
+    
+}
+.box4:hover{
+    /* width: 200px;
+    height: 200px;
+    background: lightseagreen; */
+     transform: rotate(180deg);
+     /* transform: scale(2); */
+}
